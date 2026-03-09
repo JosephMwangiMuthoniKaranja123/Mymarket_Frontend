@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import styles from "./Navbar.module.css";
+import styles from "./navbar.module.css";
 import { useState,useEffect } from "react";
 import { jwtDecode } from "jwt-decode";
 
