@@ -1,0 +1,52 @@
+.sidebar {
+ 
+  margin-top: 0%;
+  height: 600px;
+  box-sizing: border-box;
+}
+
+.title {
+  margin-bottom: 7px;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: rgb(87, 216, 152);
+  color:white;
+  width: 236px;
+  align-items: center;
+
+}
+
+.categoryItem {
+ font-weight: bold;
+ font-size: 25px;
+ padding: 10px;
+}
+
+.categoryItem:hover {
+  background-color: #c1ee57;
+}
+
+
+
+.select {
+  width: 230px;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+.select:hover {
+  border-color: #007bff;
+}
+
+.select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}

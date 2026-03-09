@@ -1,0 +1,97 @@
+/* Page wrapper */
+.page {
+  min-height: 100vh;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Welcome text */
+.welcome {
+  max-width: 650px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Form card */
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs, textarea, select */
+.container input,
+.container textarea,
+.container select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+  outline: none;
+}
+
+/* Focus effect */
+.container input:focus,
+.container textarea:focus,
+.container select:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Label styling */
+.container label {
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* File input */
+.container input[type="file"] {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* Button */
+.container button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Button hover */
+.container button:hover {
+  background: #1e4ed8;
+  transform: translateY(-2px);
+}
+
+/* Button click */
+.container button:active {
+  transform: translateY(0);
+}

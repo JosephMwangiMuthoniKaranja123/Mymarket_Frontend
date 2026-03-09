@@ -1,0 +1,106 @@
+/* Navbar container */
+.navbar {
+  position: fixed;        /* Stick to top */
+  top: 0;
+  left: 0;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Logo left, links container right */
+  padding: 10px 20px;
+  background-color: brown;
+  color: white;
+  
+  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Logo container (first link) */
+.navbar .logo-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Links container */
+.navbar .links {
+  display: flex;           /* Group links in a row */
+  gap: 50px;               /* Space between links */
+}
+
+/* Individual link styles */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  color: #ffd700;
+}
+
+/* Logo image */
+.navbar .logo-link img {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.button{
+    padding: 7px;
+  font-size: 13px;
+  border: none;
+  background-color: #16c542;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.select{
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgb(184, 77, 77);
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.icon{
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.accountWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@media (max-width:768px){
+  .navbar .links{
+    gap:10px;
+  }
+
+  .navbar .logo-link{
+    font-size: clamp(18px,2vw,25px);
+  }
+}
+@media (max-width:600px){
+
+  .navbar{
+    flex-wrap:wrap;
+  }
+
+  .navbar .links{
+    width:100%;
+    justify-content:space-around;
+    margin-top:5px;
+  }
+
+}

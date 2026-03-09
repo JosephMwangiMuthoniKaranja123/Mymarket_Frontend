@@ -1,0 +1,39 @@
+/* Main footer container */
+.container {
+  background-color: #1f2937;   /* dark gray */
+  color: #ffffff;
+  padding: 2rem 3rem;
+  margin-top: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+/* Each column */
+.container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Links */
+.container a {
+  text-decoration: none;
+  color: #d1d5db; /* light gray */
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.container a:hover {
+  color: #ffffff;
+}
+
+/* Optional: small footer bottom text (if you add later) */
+.bottom {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}

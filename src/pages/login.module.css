@@ -1,0 +1,77 @@
+/* Login.module.css */
+
+/* Center the form in the browser */
+.container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 100vh;           /* full viewport height */
+  background-color: #f5f5f5; /* optional light background */
+}
+
+/* Style the form box */
+.form {
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  gap: 15px;              /* spacing between inputs */
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;           /* fixed width for form */
+}
+
+/* Input fields */
+.inputField {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.inputField:focus {
+  border-color: #007bff; /* blue border on focus */
+}
+
+/* Button styling */
+.button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: small text */
+.text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
+.textb {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color:maroon;
+  gap: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,123 @@
+/* Container for the whole component */
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Message when no product is found */
+.noProduct {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Product card */
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image */
+/* Container for all images */
+.imageGallery {
+  display: flex;           /* images in a row */
+  gap: 10px;               /* space between images */
+  flex-wrap: wrap;         /* wrap to next line on small screens */
+  margin-bottom: 20px;
+}
+
+/* Individual product image */
+.productImage {
+  width: 150px;            /* fixed width */
+  height: 150px;           /* fixed height */
+  object-fit: cover;       /* maintain aspect ratio, crop if needed */
+  border-radius: 8px;      /* rounded corners */
+  border: 2px solid #ddd;  /* subtle border */
+  transition: transform 0.3s, border-color 0.3s; /* hover effects */
+  cursor: pointer;         /* pointer for click interaction */
+}
+
+/* Hover effect */
+.productImage:hover {
+  transform: scale(1.05);  /* slightly zoom in */
+  border-color: #007bff;   /* highlight border on hover */
+}
+
+/* Optional: primary image styling (if you want to highlight it) */
+.primaryImage {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .productImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .primaryImage {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Product title */
+.productTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Product description */
+.productDescription {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Product price */
+.productPrice {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+/* Product stock */
+.productStock {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Add to cart button */
+.addToCartBtn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ad7907;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  min-width: 200px;
+}
+
+.addToCartBtn:hover {
+  background-color: #155bb5;
+}

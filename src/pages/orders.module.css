@@ -1,0 +1,77 @@
+.container {
+   display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+  padding: 10px;
+  gap:10px;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.empty {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+
+
+.card {
+    display: flex;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid blue;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  gap: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.product {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.orderNo {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.status {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #007bff;
+}
+.paragraph{
+    font-size: 16px;
+    font-weight: lighter;
+    color: chartreuse;
+}
+.sidebar{
+      background-color: #ce6081;
+  padding: 15px;
+}
+.link{
+  padding: 200px;
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 20px;
+  
+}

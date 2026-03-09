@@ -1,0 +1,54 @@
+/* Center the whole page */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+    
+  background-image: url("/page1.jpg");
+  background-size: cover;        /* makes it fill entire container */
+  background-position: center;   /* centers the image */
+  background-repeat: no-repeat;
+}
+
+/* Logo */
+.logo {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Main heading */
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0a3586;
+  margin-bottom: 30px;
+}
+
+/* Button container */
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+/* Links styled as buttons */
+.button {
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #1e40af;
+}
+
