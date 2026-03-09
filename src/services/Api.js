@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API= axios.create({baseURL:"https://mymarket-backend-production.up.railway.app",});
+const API= axios.create({baseURL:"https://mymarket-backend-production.up.railway.app/api",});
 //atach token automatically
 API.interceptors.request.use((req)=>{
     const token= localStorage.getItem("token");
