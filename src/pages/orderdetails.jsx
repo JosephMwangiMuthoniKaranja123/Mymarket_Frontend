@@ -34,7 +34,7 @@ function Orderdetails(){
                     </div>
                     <div className={styles.itemDetails}>
 
-                        <img src={`http://localhost:8080${order.image}`}
+                        <img src={order.image}
                                  alt={order.product}
                                className={styles.itemImage}  />
                                  <div className={styles.itemDetails}>

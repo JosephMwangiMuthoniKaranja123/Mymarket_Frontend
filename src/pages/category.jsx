@@ -37,7 +37,7 @@ function Category(){
                 <div key={product.id} className={styles.productCard}>
                     <Link to={`/productdetails/${product.id}`}>
                     <img 
-                    src={`http://localhost:8080${product.image}`}
+                    src={product.image}
                     alt={product.title}
                     className={styles.productimage}/>
                     </Link>

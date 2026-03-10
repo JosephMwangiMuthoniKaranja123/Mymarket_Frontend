@@ -42,7 +42,7 @@ return(
         <div>
         { product.images.map((img)=>(
             <img 
-            key={img.id} src={`http://localhost:8080${img.image_url}`}
+            key={img.id} src={img.image_url}
             alt={`${product.title} image`} className={img.is_primary ? styles.primaryImage:styles.productImage}/>
         ))
 

@@ -63,7 +63,7 @@ return(
         {cart.map((item)=>(
               
             <div key={item.id} className={styles.cartList}>
-                <img src={`http://localhost:8080${item.image}`} alt={item.name} className={styles.itemImage}/>
+                <img src={item.image} alt={item.name} className={styles.itemImage}/>
                <div className={styles.itemDetails}>
                 <p className={styles.itemName}>{item.name}</p>
                 <p className={styles.itemPrice}>Total price:KSh {item.price*item.quantity}</p>
