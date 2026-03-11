@@ -95,7 +95,7 @@ setCategory_id(id);
                 <input type="text" placeholder="Name of the product"value={title} onChange={(e)=>setTitle(e.target.value)} required></input>
                 <textarea rows="4" cols="50" placeholder="Enter description" value={description} onChange={(e)=>setDescription(e.target.value)} required></textarea>
                 <input type="number"value={price} onChange={(e)=>setPrice(e.target.value)} required placeholder="price in KSH"></input>
-                <select value={category_id} onChange={Handlechange}>
+                <select value={category_id} onChange={Handlechange} required>
                     <option value="" disabled >Select category</option>
                     {category.map((cat)=>(
                         <option key={cat.id} value={cat.id}>{cat.name}</option>
