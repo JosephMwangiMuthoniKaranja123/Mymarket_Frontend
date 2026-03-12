@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 function Cart(){
     const [cart,setCart]=useState([]);
+    const [paymentstatus,setPaymentstatus]=useState(false);
+    const [paymentmethod,setPaymentmethod]=useState("pay-on-delivery");
 
     useEffect(()=>{
         fetchcart();
@@ -36,7 +38,7 @@ const startshopping=()=>{
 };
 const postorder= async ()=>{
     try{
-await API.post("/checkout");
+await API.post("/checkout",{paymentmethod:paymentmethod});
 alert("order placed successfully");
 fetchcart();
     }
@@ -81,10 +83,30 @@ return(
     
         </div>
          {cart.length!== 0 &&(
+            
             <div className={styles.cartSummary}>
+                <div>
+                    <h2>Select payment method</h2>
+                    <label>
+                        <input
+                        type="radio" value="pay-on-delivery" 
+                        checked={paymentmethod === "pay-on-delivery"}
+                        onChange={(e)=>{setPaymentmethod(e.target.value)}}/>
+                        Pay on delivery
+                    </label>
+                     <label>
+                        <input
+                        type="radio" value="mpesa" 
+                        checked={paymentmethod === "mpesa"}
+                        onChange={(e)=>{setPaymentmethod(e.target.value)}}/>
+                        MPESA
+                    </label>
+                </div>
+                <div>
             <h2>Cart Summary</h2>
             <p>Sub Total: KSh {carttotal}</p>
             <button onClick={postorder} className={styles.cartSummaryButton}>Place Order</button>
+            </div>
         </div>
          )
 }
