@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 function Cart(){
     const [cart,setCart]=useState([]);
-    const [paymentstatus,setPaymentstatus]=useState(false);
+    
     const [paymentmethod,setPaymentmethod]=useState("pay-on-delivery");
+    const [phonenumber,setPhonenumber]=useState();
 
     useEffect(()=>{
         fetchcart();
@@ -38,7 +39,7 @@ const startshopping=()=>{
 };
 const postorder= async ()=>{
     try{
-await API.post("/checkout",{paymentmethod:paymentmethod});
+await API.post("/checkout",{paymentmethod:paymentmethod,phonenumber:phonenumber});
 alert("order placed successfully");
 fetchcart();
     }
@@ -99,8 +100,15 @@ return(
                         type="radio" value="mpesa" 
                         checked={paymentmethod === "mpesa"}
                         onChange={(e)=>{setPaymentmethod(e.target.value)}}/>
-                        MPESA
+                       Pay now with MPESA
                     </label>
+                    {paymentmethod ==="mpesa" && (
+                        <div>
+                            <input type="number" value="phonenumber" placeholder="+2547,,," 
+                            onChange={(e)=>{setPhonenumber(e.target.value)}}/>
+                            </div>
+
+                    )};
                 </div>
                 <div>
             <h2>Cart Summary</h2>
