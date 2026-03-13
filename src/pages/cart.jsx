@@ -40,11 +40,12 @@ const startshopping=()=>{
 const postorder= async ()=>{
     try{
 await API.post("/checkout",{paymentmethod:paymentmethod,phonenumber:phonenumber});
-if(paymentmethod !=="mpesa"){
-alert("order placed successfully");
+if(paymentmethod ==="mpesa"){
+    alert("Wait for mpesa prompt to pay");
+
 }
 else {
-    alert("Wait for mpesa prompt to pay");
+    alert("order placed successfully");
 }
 fetchcart();
     }
