@@ -37,9 +37,29 @@ const startshopping=()=>{
    
     navigate("/dashboard");
 };
+const formatphonenumber=(phone)=>{
+    if (!phone) return "";
+    phone=phone.replace(/\s+/g, "");
+    if (phone.startsWith("+254")){
+        return phone.replace("+","");
+    }
+    if (phone.startsWith("07")){
+        return "254"+phone.substring(1);
+    }
+    if (phone.startsWith("7")){
+        return "254"+phone;
+    }
+    return phone;
+}
+
 const postorder= async ()=>{
     try{
-await API.post("/checkout",{paymentmethod:paymentmethod,phonenumber:phonenumber});
+        if(paymentmethod ==="mpesa" && !phonenumber){
+            alert("Enter phone number");
+            return;
+        }
+        const formattedphonenumber=formatphonenumber(phonenumber);
+await API.post("/checkout",{paymentmethod:paymentmethod,phonenumber:formattedphonenumber});
 if(paymentmethod ==="mpesa"){
     alert("Wait for mpesa prompt to pay");
 
@@ -110,8 +130,8 @@ return(
                     </label>
                     {paymentmethod ==="mpesa" && (
                         <div>
-                            <label>Enter phonenumber :
-                            <input type="number" value="phonenumber" placeholder="+2547,,," 
+                            <label>Enter phonenumber: +254
+                            <input type="text" value={phonenumber} placeholder="phonenumber" 
                             onChange={(e)=>{setPhonenumber(e.target.value)}}/>
                             </label>
                             </div>
