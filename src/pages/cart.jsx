@@ -40,7 +40,12 @@ const startshopping=()=>{
 const postorder= async ()=>{
     try{
 await API.post("/checkout",{paymentmethod:paymentmethod,phonenumber:phonenumber});
+if(paymentmethod !=="mpesa"){
 alert("order placed successfully");
+}
+else {
+    alert("Wait for mpesa prompt to pay");
+}
 fetchcart();
     }
     catch(err){
@@ -104,8 +109,10 @@ return(
                     </label>
                     {paymentmethod ==="mpesa" && (
                         <div>
+                            <label>Enter phonenumber :
                             <input type="number" value="phonenumber" placeholder="+2547,,," 
                             onChange={(e)=>{setPhonenumber(e.target.value)}}/>
+                            </label>
                             </div>
 
                     )};
