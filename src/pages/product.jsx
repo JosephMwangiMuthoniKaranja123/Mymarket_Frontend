@@ -63,7 +63,7 @@ function Products(){
         {products.length===0 ?(
             <p>No products available</p>
         ):(products.map((product)=>(
-            <div key={product.id} className={styles.productcarddis}>
+            
             <div  className={styles.productCard}>
                 <Link to={`/productdetails/${product.id}`}>
                 <img 
@@ -73,7 +73,7 @@ function Products(){
                 </Link>
                 <h3>{product.title}</h3>
                 <h4>KSH {product.price}</h4>
-            </div>
+            
             </div>
         )))}
     </div>

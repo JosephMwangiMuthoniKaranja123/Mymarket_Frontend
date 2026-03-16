@@ -1,7 +1,7 @@
 .cocontainer {
  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 .container{
   display: grid;
@@ -90,12 +90,10 @@
   border-radius: 4px;
   background-color: cornsilk ;
 }
-.productcarddis{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 2px;
-  justify-content: flex-start;
+.cocontainer {
+ gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
 }
 
 }
