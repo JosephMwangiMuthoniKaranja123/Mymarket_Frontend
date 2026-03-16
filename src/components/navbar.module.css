@@ -26,7 +26,7 @@
 }
 
 /* Links container */
-.navbar .links {
+.links {
   display: flex;           /* Group links in a row */
   gap: 50px;               /* Space between links */
 }
@@ -82,9 +82,17 @@
   gap: 2px;
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
+
+  .navbar{
+    padding: 8px;
+
+  }
   .navbar .links{
-    gap:10px;
+    gap:5px;
+     width:100%;
+    justify-content:space-around;
+    margin-top:5px;
   }
 
   .navbar .logo-link{
@@ -97,10 +105,11 @@
     flex-wrap:wrap;
   }
 
-  .navbar .links{
+   .links{
     width:100%;
     justify-content:space-around;
     margin-top:5px;
+    gap: 5px;
   }
 
 }
