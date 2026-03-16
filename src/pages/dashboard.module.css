@@ -29,3 +29,9 @@
   margin-top: 50px;
   padding: 10px;
 }
+@media (max-width:767px) {
+  .dashboard{
+  display: grid;
+  grid-template-columns:auto auto;
+  }
+}
