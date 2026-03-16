@@ -81,10 +81,7 @@
   width: 100%;
 }
 .productCard {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-gap: 2px;
+
   width: 110px;
   border: 1px solid #ddd;
   padding: 2px;
@@ -92,6 +89,12 @@ gap: 2px;
   margin: 3px 0;
   border-radius: 4px;
   background-color: cornsilk ;
+}
+.productcarddis{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 
 }
