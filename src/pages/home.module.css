@@ -51,4 +51,43 @@
 .button:hover {
   background-color: #1e40af;
 }
+@media (max-width:767px) {
+  .container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+    
+  background-image: url("/page1.jpg");
+  background-size: cover;        /* makes it fill entire container */
+  background-position: center;   /* centers the image */
+  background-repeat: no-repeat;
+}
+  .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0a3586;
+  margin-bottom: 30px;
+}
+.button {
+  padding: 8px 10px;
+  text-decoration: none;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.logo {
+  height: 120px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+  
+}
 

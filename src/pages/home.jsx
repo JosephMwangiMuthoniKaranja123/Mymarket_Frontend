@@ -9,7 +9,7 @@ import styles from "./home.module.css";
         <img src="/logo.jpg" alt="logo" className={styles.logo}/>
         <h1 className={styles.title}> WELCOME TO MYMARKET ONLINE SHOPPING</h1>
         <div className={styles.actions}>
-            <Link to="/products" style={{fontSize:"2rem",color:"ButtonText",fontWeight:"bold"}}>see products</Link>
+            <Link to="/products" style={{fontSize:"1.8rem",color:"ButtonText",fontWeight:"bold"}}>see products</Link>
            {token ? (
       <Link to="/dashboard" className={styles.button}>DASHBOARD</Link>
     ) : (
