@@ -27,7 +27,7 @@
 }
 
 .products {
-  padding-left: 50px;
+  padding-left: 70px;
   padding: 10px;
 }
 .menuBtn {
@@ -76,7 +76,7 @@
   z-index: 1100;
   }
   .footer {
-  position: relative;
+  position: absolute;
   bottom: 0px; 
   
 }
