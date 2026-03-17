@@ -29,10 +29,16 @@
   margin-top: 50px;
   padding: 10px;
 }
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+}
 @media (max-width:767px) {
   .dashboard{
   display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns:  1fr;
   }
   .container {
   display: grid;
@@ -43,4 +49,25 @@
   padding: 2px;
   gap: 5px;
 }
+  .sidebar {
+    display: none; /* hidden by default */
+    position: fixed;      /* overlay */
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 250px;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%); /* hidden offscreen */
+  }
+
+  .sidebar.show {
+    display: block;
+    transform: translateX(0);  /* slide in */
+  }
+   .menuBtn {
+    display: inline-block;
+  }
+
 }
