@@ -82,6 +82,11 @@
   .container{
     grid-template-columns: 1fr;
   }
+  .link{
+  padding: 2px;
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 14px;
   
-  
+}
 }
