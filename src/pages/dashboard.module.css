@@ -52,8 +52,7 @@
   .sidebar {
     display: none; /* hidden by default */
     position: fixed;      /* overlay */
-    top: 0;
-    left: 0;
+    
     height: 100dvh;
     width: 250px;
     z-index: 1000;
@@ -70,7 +69,7 @@
     display: inline-block;
     color: black;
      position: absolute;  /* taken out of normal flow */
-  top: 30px;
+  top: 100px;
   left: 10px;
   z-index: 1100;
   }
