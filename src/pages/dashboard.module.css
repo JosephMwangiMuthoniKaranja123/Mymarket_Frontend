@@ -70,7 +70,7 @@
     display: inline-block;
     color: black;
      position: absolute;  /* taken out of normal flow */
-  top: 10px;
+  top: 30px;
   left: 10px;
   z-index: 1100;
   }
