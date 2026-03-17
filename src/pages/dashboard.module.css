@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 50px 1fr auto;
+  grid-template-rows: 100px 1fr auto;
   
   min-height: 100vh;
   padding: 2px;
@@ -21,12 +21,12 @@
 /* Optional styling */
 .sidebar {
   background-color: #ce6081;
-  margin-top: 40px;
+  padding-top: 40px;
   padding: 15px;
 }
 
 .products {
-  margin-top: 50px;
+  padding-top: 50px;
   padding: 10px;
 }
 .menuBtn {
@@ -52,7 +52,8 @@
   .sidebar {
     display: none; /* hidden by default */
     position: fixed;      /* overlay */
-    
+    top: 65px;
+    left: 0px;
     height: 100dvh;
     width: 250px;
     z-index: 1000;
@@ -69,7 +70,7 @@
     display: inline-block;
     color: black;
      position: absolute;  /* taken out of normal flow */
-  top: 75px;
+  top: 60px;
   left: 0px;
   z-index: 1100;
   }
