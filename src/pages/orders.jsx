@@ -31,7 +31,7 @@ return(
         {orders.map((order)=>(
            <div key={order.id} className={styles.card}>
             
-             <img src={`http://localhost:8080${order.image}`}
+             <img src={`${order.image}`}
              alt={order.product}
              className={styles.image}/>
              <div>

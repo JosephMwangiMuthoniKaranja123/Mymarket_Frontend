@@ -1,6 +1,6 @@
 .container {
    display: grid;
-  grid-template-rows: auto 1fr;
+  
   grid-template-columns: 250px 1fr;
   min-height: 100vh;
   padding: 10px;
@@ -73,5 +73,15 @@
   color: goldenrod;
   font-weight: bold;
   font-size: 20px;
+  
+}
+@media (max-width:767px) {
+  .sidebar{
+    display: none;
+  }
+  .container{
+    grid-template-columns: 1fr;
+  }
+  
   
 }
