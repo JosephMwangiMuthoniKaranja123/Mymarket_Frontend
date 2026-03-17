@@ -14,12 +14,12 @@ function Dashboard(){
    <div className={styles.container}>
     <Navbar/>
     <div className={styles.dashboard}>
-        
-           
-            <div className={styles.sidebar}>
-              <button className={styles.menuBtn} onClick={showsidebar}>
-              ☰
-              </button>
+             <button className={styles.menuBtn} onClick={showsidebar}>
+          ☰
+        </button>
+
+            <div className={`${styles.sidebar} ${sidebaropen ?styles.show :""}`}>
+             
                 <Sidebar/>
             </div>
             <div className={styles.products}>
