@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className={styles.links}>
         <Link to="/">HOME</Link>
         <Link to="/products">PRODUCTS</Link>
-        <Link to="/dashboard">DASHBOARD</Link>
+     
         <Link to="/addproduct">SELL PRODUCT</Link>
          <Link to="/cart" className={styles["logo-link"]}><img src="/cart.jpg" alt="cart"  />Cart</Link>
          <div className={styles.accountWrapper}>
