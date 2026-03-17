@@ -36,7 +36,7 @@
   }
   .container {
   display: grid;
-  grid-template-rows: 150px 1fr auto;
+  grid-template-rows: 100px auto auto;
   
   min-height: 100vh;
   padding: 2px;
