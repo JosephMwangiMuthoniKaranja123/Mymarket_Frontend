@@ -108,12 +108,15 @@
   }
 
    .links{
+    display: flex;
+    overflow-x: auto;
     width:100%;
     justify-content:space-around;
     margin-top:3px;
     gap: 1px;
     font-size: 10px;
     font-weight: bold;
+
   }
 .select{
   padding: 4px;
