@@ -15,18 +15,19 @@
 .dashboard {
       display: grid;
   grid-template-columns: 250px 1fr;
+  padding-top: 40px;
   
 }
 
 /* Optional styling */
 .sidebar {
   background-color: #ce6081;
-  padding-top: 40px;
+  
   padding: 15px;
 }
 
 .products {
-  padding-top: 50px;
+
   padding: 10px;
 }
 .menuBtn {
@@ -75,7 +76,8 @@
   z-index: 1100;
   }
   .footer {
-  position: static;   /* important: not absolute/fixed */
+  position: static; 
+  
 }
 
 }
