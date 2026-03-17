@@ -146,14 +146,15 @@
   }
   .cartList{
     padding: 10px;
-    width: 150px; ;
+    width: 300px; ;
   }
   .removeButton{
     padding: 5px;
   }
   .all{
     display: grid;
-    grid-template-columns:155px 1fr ;
+    grid-template-rows:auto auto ;
+    margin-top: 10px;
     
 }
 }
