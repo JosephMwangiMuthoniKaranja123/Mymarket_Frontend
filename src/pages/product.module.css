@@ -92,9 +92,8 @@
 }
 .cocontainer {
  gap: 2px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
     overflow-x: auto;       /* enable horizontal scrolling */
   scroll-behavior: smooth;
 }
