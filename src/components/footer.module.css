@@ -37,3 +37,10 @@
   font-size: 0.85rem;
   color: #9ca3af;
 }
+@media (max-width:767px) {
+  .container{
+    display: grid;
+    grid-template-rows:auto auto auto;
+  }
+  
+}
