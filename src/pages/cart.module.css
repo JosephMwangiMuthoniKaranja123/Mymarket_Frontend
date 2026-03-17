@@ -143,6 +143,7 @@
 @media (max-width:767px) {
   .container{
     max-width: 100%;
+    margin: 7px;
   }
   .cartList{
     padding: 10px;
@@ -154,8 +155,8 @@
   .all{
     display: grid;
     grid-template-columns:1fr ;
-    margin: 10px;
-    gap: 7px;
+    
+    
     
 }
 }
