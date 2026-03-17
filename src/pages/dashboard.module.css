@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 50px 1fr auto;
   
   min-height: 100vh;
   padding: 2px;
@@ -69,8 +69,8 @@
     display: inline-block;
     color: black;
      position: absolute;  /* taken out of normal flow */
-  top: 100px;
-  left: 10px;
+  top: 75px;
+  left: 0px;
   z-index: 1100;
   }
   .footer {
