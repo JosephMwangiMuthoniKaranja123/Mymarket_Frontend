@@ -68,6 +68,14 @@
   }
    .menuBtn {
     display: inline-block;
+    color: black;
+     position: absolute;  /* taken out of normal flow */
+  top: 10px;
+  left: 10px;
+  z-index: 1100;
   }
+  .footer {
+  position: static;   /* important: not absolute/fixed */
+}
 
 }
