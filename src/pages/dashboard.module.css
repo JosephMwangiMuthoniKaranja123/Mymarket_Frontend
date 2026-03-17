@@ -55,7 +55,7 @@
     position: fixed;      /* overlay */
     top: 65px;
     left: 0px;
-    height: 100dvh;
+    height: 90dvh;
     width: 250px;
     z-index: 1000;
     overflow-y: auto;
