@@ -125,4 +125,19 @@
   color: whitesmoke;
   font-weight: bold;
 }
+.icon{
+  height: 20px;
+  width: auto;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+  .navbar .logo-link {
+  font-size: 9px;
+  }
+  .navbar .logo-link img {
+  height: 20px;
+  width: auto;
+  margin-right: 3px;
+  border-radius: 3px;
+}
 }

@@ -48,7 +48,7 @@ export default function Navbar() {
         <Link to="/products">PRODUCTS</Link>
         <Link to="/dashboard">DASHBOARD</Link>
         <Link to="/addproduct">SELL PRODUCT</Link>
-         <Link to="/cart" className={styles["logo-link"]}><img src="/cart.jpg" alt="cart" />Cart</Link>
+         <Link to="/cart" className={styles["logo-link"]}><img src="/cart.jpg" alt="cart"  />Cart</Link>
          <div className={styles.accountWrapper}>
           <img src="/profile_icon.jpg " alt="proficon" className={styles.icon}/>
           
