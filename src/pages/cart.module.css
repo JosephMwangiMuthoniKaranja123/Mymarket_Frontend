@@ -154,7 +154,7 @@
   .all{
     display: grid;
     grid-template-columns:1fr ;
-    margin-top: 10px;
+    margin: 10px;
     gap: 7px;
     
 }
