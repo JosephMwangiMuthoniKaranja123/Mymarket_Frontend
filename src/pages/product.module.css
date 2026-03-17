@@ -54,6 +54,9 @@
 .productimage:active {
   transform: scale(0.98);
 }
+.footer{
+  position: static;
+}
 
 @media (max-width:767px){
   .productimage {
@@ -93,9 +96,11 @@
 .cocontainer {
  gap: 2px;
   display: flex;
-  
+
     overflow-x: auto;       /* enable horizontal scrolling */
   scroll-behavior: smooth;
 }
-
+.footer{
+  position: static;
+}
 }
