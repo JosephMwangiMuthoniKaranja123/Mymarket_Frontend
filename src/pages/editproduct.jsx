@@ -17,7 +17,7 @@ useEffect(()=>{
 
 const fetchProduct=async ()=>{
  try {
-     const res=await API.get(`products/productbyid/${id}`);
+     const res=await API.get(`/products/productbyid/${id}`);
      setProduct(res.data);
  } catch (error) {
     console.log(error);
@@ -32,7 +32,7 @@ setProduct({
 const Handlesubmit=async ()=>{
     e.preventDefault();
     try {
-        await API.put(`products/${id}`,product);
+        await API.put(`/products/${id}`,product);
         alert("products updated successfully");
         navigate("/products");
 
