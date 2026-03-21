@@ -32,7 +32,7 @@ setProduct({
 const Handlesubmit=async ()=>{
     e.preventDefault();
     try {
-        await API.put(`/products/${id}`,product);
+        await API.put(`/products/productbyid/${id}`,product);
         alert("products updated successfully");
         navigate("/products");
 
