@@ -11,6 +11,7 @@ import Addproduct from './pages/addproduct';
 import Productdetails from './pages/productdetails';
 import Cart from './pages/cart';
 import Orderdetails from './pages/orderdetails';
+import Editproduct from './pages/editproduct';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/productdetails/:productid' element={<Productdetails/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/orders/:id' element={<Orderdetails/>}/>
+        <Route path='/editproduct/:id' element={<Editproduct/>}/>
  
       </Routes>
 

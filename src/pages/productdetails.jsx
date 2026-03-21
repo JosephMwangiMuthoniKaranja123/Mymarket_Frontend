@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import API from "../services/Api";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import styles from "./productdetails.module.css";
 
 function Productdetails(){
@@ -32,6 +32,7 @@ const addcart=async ()=>{
         
     }
 }
+
 return(
     <div className={styles.container}>
        {!product ?(
@@ -56,6 +57,7 @@ return(
           </div>
       )}
       <button className={styles.addToCartBtn} onClick={addcart}>Add to cart</button>
+      <Link to={`/editproduct/${productid}`}>Edit Product</Link>
       </div>
   
 )
