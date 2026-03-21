@@ -29,7 +29,7 @@ setProduct({
     [e.target.name]:e.target.value,
 });
 };
-const Handlesubmit=async ()=>{
+const Handlesubmit=async (e)=>{
     e.preventDefault();
     try {
         await API.put(`/products/productbyid/${id}`,product);
